@@ -3,13 +3,12 @@
     <head>
         <title>NOC List</title>
     </head>
+    <body>
+        <h1>NOC Data Centers</h1>
+        <ul>
+            {% for noc in noc_list %}
+                <li>{{ noc.name }} - {{ noc.location }}</li>
+            {% endfor %}
+        </ul>
+    </body>
 </html>
-<body>
-    <h1>
-        NOC Data Centers
-    </h1>
-    <ul>
-        {% endfor %}
-        <li>{{ noc.name }} - {{ noc.location }}</li>
-    </ul>
-</body>
