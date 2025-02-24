@@ -1,0 +1,11 @@
+{% extends 'monitoring/base.html' %}
+
+{% block title %}Home - Nexlinx{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <h1>Welcome to Nexlinx NOC Monitoring System</h1>
+        <p>Monitor your Network Operations Centers (NOCs) in real-time.</p>
+        <a href="{% url 'noc_list' %}" class="btn btn-primary">View NOCs</a>
+    </div>
+{% endblock %}
