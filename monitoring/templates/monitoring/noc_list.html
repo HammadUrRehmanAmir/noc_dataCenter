@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NOC List</title>
+    </head>
+</html>
+<body>
+    <h1>
+        NOC Data Centers
+    </h1>
+    <ul>
+        {% endfor %}
+        <li>{{ noc.name }} - {{ noc.location }}</li>
+    </ul>
+</body>
